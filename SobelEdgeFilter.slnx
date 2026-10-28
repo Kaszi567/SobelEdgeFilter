@@ -1,3 +1,15 @@
 <Solution>
-  <Project Path="SobelEdgeFilter/SobelEdgeFilter.csproj" />
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="SobelEdgeFilter/SobelEdgeFilter.csproj">
+    <BuildDependency Project="SobelLibAsm/SobelLibAsm.vcxproj" />
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
+  <Project Path="SobelLibAsm/SobelLibAsm.vcxproj" Id="67d74b45-c868-498c-99df-3e379c504ca4" />
+  <Project Path="SobelLibCs/SobelLibCs.csproj" Id="fa3170de-e82c-4d14-b173-45d7ae281416">
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
 </Solution>
