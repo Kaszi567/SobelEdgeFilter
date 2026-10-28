@@ -6,6 +6,14 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <Configurations>Debug;Release;SobelEdgeFilter</Configurations>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\x64\$(Configuration)\SobelLibAsm.dll"
+			  Link="SobelLibAsm.dll"
+			  CopyToOutputDirectory="PreserveNewest" />
+	</ItemGroup>
 
 </Project>
