@@ -8,8 +8,4 @@
     <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\SobelEdgeFilter\SobelEdgeFilter.csproj" />
-  </ItemGroup>
-
 </Project>
