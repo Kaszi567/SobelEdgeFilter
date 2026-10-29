@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SobelEdgeFilter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="600" Width="1000">
+    <DockPanel>
+        <!-- Górny pasek z przyciskami -->
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="8">
+            <Button x:Name="BtnLoad" Content="Wczytaj obraz" Padding="12,4" Click="BtnLoad_Click"/>
+        </StackPanel>
 
-    </Grid>
+        <!-- Dolny pasek stanu -->
+        <TextBlock DockPanel.Dock="Bottom" x:Name="TxtStatus" Margin="8" Text="Wczytaj obraz"/>
+        <TextBlock  TextWrapping="Wrap" Text="28.10.2026 v0.1 - Konwersja kolorowego obrazu do skali szarości (Gray8), referencyjna implementacja algorytmu Sobela w C# z testami oraz ćwiczenie z instrukcji AVX2 w asemblerze (negatyw obrazu)" Padding="8" Width="125"></TextBlock>
+        <!-- Dwa obrazy obok siebie: oryginał i wynik -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" BorderBrush="Gray" BorderThickness="1" Margin="8">
+                <Image x:Name="ImgSource" Stretch="Uniform"/>
+            </Border>
+            <Border Grid.Column="1" BorderBrush="Gray" BorderThickness="1" Margin="8">
+                <Image x:Name="ImgResult" Stretch="Uniform"/>
+            </Border>
+        </Grid>
+    </DockPanel>
 </Window>
