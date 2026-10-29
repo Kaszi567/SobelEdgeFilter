@@ -12,4 +12,5 @@
   <Project Path="SobelLibCs/SobelLibCs.csproj" Id="fa3170de-e82c-4d14-b173-45d7ae281416">
     <Platform Solution="*|x64" Project="x64" />
   </Project>
+  <Project Path="SobelTests/SobelTests.csproj" Id="8cb7e874-1248-45ef-8591-653c78ac7306" />
 </Solution>
