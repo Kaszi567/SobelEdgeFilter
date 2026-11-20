@@ -1,3 +1,4 @@
 LIBRARY SobelLibAsm
 EXPORTS
     InvertAsm
+    SobelAsm
