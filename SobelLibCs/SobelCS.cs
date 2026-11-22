@@ -1,15 +1,9 @@
 ﻿// ============================================================
-// Temat:      Wykrywanie krawedzi filtrem Sobela (C# vs ASM x64 AVX2)
+// Temat:      Wykrywanie krawędzi filtrem Sobela (C# vs ASM x64 AVX2)
 // Opis:       Referencyjna implementacja filtru Sobela w C#.
-//             Przetwarza obraz Gray8 na binarna mape krawedzi.
-// Autor:      Julia Pleszewska (uzupelnienie naglowka;
-//             implementacja zespolowa)
-// Rok/sem.:   2026/2027, semestr zimowy
-// Data:       22.11.2026
+//             Przetwarza obraz Gray8 na binarną mapę krawędzi.
 // Wersje:
-//   v0.1 28.10.2026 - Poczatkowa implementacja Sobela w C#
-//   v0.2 22.11.2026 Julia P - opis pelnej walidacji zakresow,
-//        uzupelnienie naglowka
+//   v0.1 28.10.2026
 // ============================================================
 
 using System;
